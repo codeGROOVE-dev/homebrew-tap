@@ -15,7 +15,10 @@ cask "review-goose" do
   preflight do
     system_command "make",
                    args: ["app-bundle"],
-                   chdir: staged_path
+                   chdir: staged_path,
+                   env: {
+                     "PATH" => "#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}",
+                   }
   end
 
   app "out/Review Goose.app"
