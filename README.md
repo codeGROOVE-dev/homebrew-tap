@@ -1,4 +1,4 @@
-# CodeGROOVE-dev Tap
+# codeGROOVE-dev Tap
 
 ## How do I install these formulae?
 
@@ -12,6 +12,10 @@ Or, in a `brew bundle` `Brewfile`:
 tap "codegroove-dev/tap"
 brew "<formula>"
 ```
+
+## Formulas
+
+- review-goose
 
 ## Documentation
 
