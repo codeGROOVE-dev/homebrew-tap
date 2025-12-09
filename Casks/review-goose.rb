@@ -1,10 +1,10 @@
 cask "review-goose" do
-  version "0.9.3"
+  version "0.9.4"
   sha256 :no_check  # Built from source, no pre-compiled binary
 
   url "https://github.com/codeGROOVE-dev/goose.git",
       tag:      "v#{version}",
-      revision: "7ed1d3a9f3904414b3c2c8999e88fde99f293ba6"
+      revision: "07c09f508c69b2ed0ea8b85ce2bf7a32cadec0ec"
   name "Review Goose"
   desc "Menubar for GitHub pull request tracking and notifications"
   homepage "https://codegroove.dev/products/goose/"
