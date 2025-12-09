@@ -8,12 +8,12 @@ class ReviewGoose < Formula
   license "GPL-3.0"
   head "https://github.com/codeGROOVE-dev/goose.git", branch: "main"
 
+  depends_on "go" => :build
+  depends_on "gh"
+
   # On macOS, use the cask instead (brew install --cask review-goose)
   # This formula is primarily for Linux support
   depends_on :linux
-
-  depends_on "go" => :build
-  depends_on "gh"
 
   def install
     system "make", "build"

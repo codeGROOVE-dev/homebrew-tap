@@ -1,6 +1,6 @@
 cask "review-goose" do
   version "0.9.4"
-  sha256 :no_check  # Built from source, no pre-compiled binary
+  sha256 :no_check # Built from source, no pre-compiled binary
 
   url "https://github.com/codeGROOVE-dev/goose.git",
       tag:      "v#{version}",
@@ -12,19 +12,19 @@ cask "review-goose" do
   depends_on formula: "go"
   depends_on formula: "gh"
 
+  app "out/Review Goose.app"
+
   preflight do
     system_command "make",
-                   args: ["app-bundle"],
+                   args:  ["app-bundle"],
                    chdir: staged_path,
-                   env: {
-                     "PATH" => "#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}",
+                   env:   {
+                     "PATH" => "#{HOMEBREW_PREFIX}/bin:#{ENV.fetch("PATH", nil)}",
                    }
   end
 
-  app "out/Review Goose.app"
-
   zap trash: [
-    "~/Library/Preferences/dev.codegroove.goose.plist",
     "~/Library/Application Support/goose",
+    "~/Library/Preferences/dev.codegroove.goose.plist",
   ]
 end
