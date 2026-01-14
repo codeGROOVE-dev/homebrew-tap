@@ -3,8 +3,8 @@ class ReviewGoose < Formula
   homepage "https://codegroove.dev/products/goose/"
 
   url "https://github.com/codeGROOVE-dev/goose.git",
-      tag:      "v0.9.6",
-      revision: "763302eccd747b176babe69f912475092bafed6f"
+      tag:      "v0.9.7",
+      revision: "0fbef3dae872c0f610a401a37586cfe5edcdab8f"
   license "GPL-3.0"
   head "https://github.com/codeGROOVE-dev/goose.git", branch: "main"
 
