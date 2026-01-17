@@ -15,7 +15,8 @@ brew "<formula>"
 
 ## Formulas
 
-- review-goose
+- review-goose - Menubar for GitHub pull request tracking and notifications
+- review-goose-cli - GitHub CLI tool that shows which PRs are waiting on you
 
 ## Documentation
 
